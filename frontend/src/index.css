@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm earthy tones for Bihari Masala theme */
+        --background: 0.98 0.01 40;
+        --foreground: 0.25 0.02 30;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 30;
+        
+        --primary: 0.45 0.15 25;
+        --primary-foreground: 0.98 0.01 40;
+        
+        --secondary: 0.92 0.03 45;
+        --secondary-foreground: 0.25 0.02 30;
+        
+        --muted: 0.95 0.02 40;
+        --muted-foreground: 0.50 0.03 30;
+        
+        --accent: 0.92 0.03 45;
+        --accent-foreground: 0.25 0.02 30;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.01 40;
+        
+        --border: 0.90 0.02 40;
+        --input: 0.90 0.02 40;
+        --ring: 0.45 0.15 25;
+        
+        /* Spice-themed colors */
+        --spice-red: 0.50 0.20 20;
+        --spice-orange: 0.65 0.18 45;
+        --spice-brown: 0.35 0.08 30;
+        
+        --chart-1: 0.65 0.18 45;
+        --chart-2: 0.50 0.20 20;
+        --chart-3: 0.35 0.08 30;
+        --chart-4: 0.70 0.15 60;
+        --chart-5: 0.55 0.12 35;
+    }
+
+    .dark {
+        --background: 0.20 0.02 30;
+        --foreground: 0.95 0.01 40;
+        
+        --card: 0.25 0.02 30;
+        --card-foreground: 0.95 0.01 40;
+        
+        --popover: 0.22 0.02 30;
+        --popover-foreground: 0.95 0.01 40;
+        
+        --primary: 0.70 0.18 45;
+        --primary-foreground: 0.20 0.02 30;
+        
+        --secondary: 0.30 0.03 30;
+        --secondary-foreground: 0.95 0.01 40;
+        
+        --muted: 0.28 0.03 30;
+        --muted-foreground: 0.65 0.03 35;
+        
+        --accent: 0.35 0.05 35;
+        --accent-foreground: 0.95 0.01 40;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.95 0.01 40;
+        
+        --border: 0.30 0.02 30;
+        --input: 0.30 0.02 30;
+        --ring: 0.65 0.18 45;
+        
+        /* Spice-themed colors for dark mode */
+        --spice-red: 0.60 0.22 20;
+        --spice-orange: 0.70 0.18 45;
+        --spice-brown: 0.75 0.08 40;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-spice-red {
+        color: oklch(var(--spice-red));
+    }
+    
+    .text-spice-orange {
+        color: oklch(var(--spice-orange));
+    }
+    
+    .text-spice-brown {
+        color: oklch(var(--spice-brown));
+    }
+    
+    .bg-spice-red {
+        background-color: oklch(var(--spice-red));
+    }
+    
+    .bg-spice-orange {
+        background-color: oklch(var(--spice-orange));
+    }
+    
+    .bg-spice-brown {
+        background-color: oklch(var(--spice-brown));
+    }
+    
+    .border-spice-red {
+        border-color: oklch(var(--spice-red));
+    }
+    
+    .border-spice-orange {
+        border-color: oklch(var(--spice-orange));
+    }
+    
+    .border-spice-brown {
+        border-color: oklch(var(--spice-brown));
+    }
+}
