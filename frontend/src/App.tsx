@@ -9,7 +9,7 @@ import ProductCatalog from './components/productCatalog';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import Cart from './components/cart';
-import { CartProvider } from './components/cartContext';
+import { CartProvider } from './components/temp';
 
 const queryClient = new QueryClient();
 

@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
-import { useCart } from './cartContext';
+import { useCart } from './temp';
 import { usePlaceOrder } from '../hooks/useQueries';
 
 export default function Cart() {
@@ -71,7 +71,7 @@ export default function Cart() {
                   <div className="space-y-4 py-4">
                     {items.map((item) => (
                       <div key={item.id.toString()} className="flex gap-4">
-                        <div className="h-20 w-20 rounded-lg overflow-hidden bg-muted flex-shrink-0">
+                        <div className="h-20 w-20 rounded-lg overflow-hidden bg-muted shrink-0">
   <img
     src={item.image}
     alt={item.name}

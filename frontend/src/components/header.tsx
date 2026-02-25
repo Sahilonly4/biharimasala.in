@@ -1,7 +1,7 @@
 import { ShoppingCart, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
-import { useCart } from './CartContext';
+import { useCart } from './temp';
 import logo from "@/images/Bihari_Masala.png";
 
 interface HeaderProps {

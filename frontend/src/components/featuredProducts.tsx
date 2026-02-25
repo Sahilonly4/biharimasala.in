@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Plus } from "lucide-react";
 import { useGetAllProducts } from "../hooks/useQueries";
 import { Skeleton } from "@/components/ui/skeleton";
-import { useCart } from "./CartContext";
+import { useCart } from "./temp";
 import { toast } from "sonner";
 
 interface FeaturedProductsProps {

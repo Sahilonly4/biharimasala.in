@@ -10,7 +10,7 @@ import {
 } from "../hooks/useQueries";
 import { ProductCategory } from "../types/product";
 import { Skeleton } from "@/components/ui/skeleton";
-import { useCart } from "./cartContext";
+import { useCart } from "./temp";
 import { toast } from "sonner";
 
 type SizeType = string;
