@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ThemeProvider } from 'next-themes';
 import { Toaster } from '@/components/ui/sonner';
-import Header from './components/Header';
+import Header from './components/header';
 import Hero from './components/Hero';
 import FeaturedProducts from './components/FeaturedProducts';
 import ProductCatalog from './components/ProductCatalog';
