@@ -3,13 +3,13 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ThemeProvider } from 'next-themes';
 import { Toaster } from '@/components/ui/sonner';
 import Header from './components/header';
-import Hero from './components/Hero';
-import FeaturedProducts from './components/FeaturedProducts';
-import ProductCatalog from './components/ProductCatalog';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Cart from './components/Cart';
-import { CartProvider } from './components/CartContext';
+import Hero from './components/hero';
+import FeaturedProducts from './components/featuredProducts';
+import ProductCatalog from './components/productCatalog';
+import Contact from './components/contact';
+import Footer from './components/footer';
+import Cart from './components/cart';
+import { CartProvider } from './components/cartContext';
 
 const queryClient = new QueryClient();
 
